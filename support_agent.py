@@ -6,7 +6,7 @@ client = Swarm()
 
 # Example function (same as yours):
 def get_order_status(reference_id: str):
-    access_token = "gfmSGQ9uhPssz394P5WLQk8isUjpxNLbxuthuoAJkDE.j5CUYLC7iidYRyT6DCgBv-_IUeY7PYU_wjSnbjew9kE"
+    access_token = "PYBMnfzgBSheiEsAh-I0a4I8BWb1bVAFb7gpvhWqFs8.hLcMP46f86UScw7tNPvBP5IMaQn8HEYRznFxzGheKxA"
     conn = http.client.HTTPSConnection("api.salla.dev")
     payload = ''
     headers = {"Authorization": f"Bearer {access_token}"}
@@ -24,7 +24,7 @@ agent_a = Agent(
 # We’ll keep the entire conversation in this list.
 conversation = [
     # Optionally, you can start with a system or user “context” message.
-    {"role": "system", "content": "You are a helpful assistant for checking order statuses."},
+    {"role": "system", "content": "You are a customer service for online store."},
 ]
 
 while True:
